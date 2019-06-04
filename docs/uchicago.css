@@ -1,0 +1,153 @@
+/* U Chicago colors */
+/* red: #800000 */
+/* grey: #4d4d4f */
+
+.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { background: white }
+
+.title-slide {
+    background-color: #F3F3F1;
+    padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+.title-slide-h1 {
+    color: #800000; /* U Chicago red */
+    padding-top: 250px;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 0.05;
+    text-align: left;
+    text-shadow: none;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+}
+
+/* H2 fonts */
+.title-slide-h2 {
+    color: #4d4d4f; /* U Chicago grey accent 1 */ 
+    font-size: 35px;
+    text-align: left;
+    text-shadow: none;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+/* H3 fonts */
+.title-slide-h3 {
+    font-size: 28px;
+    font-weight: normal;
+    color: #4d4d4f; /* U Chicago grey accent 1 */ 
+    text-align: left;
+    text-shadow: none;
+    padding: 0;
+    margin: 0; 
+    line-height: 1;
+}
+
+/* Remove slide count */
+.title-slide .remark-slide-number {
+    display: none;
+}
+
+.large {
+    font-size: 25px;
+}
+
+
+/* Other adjustments */
+
+.text-slide {
+    /* background-color: #800000; */
+    /* color: #F3F3F1; */
+}
+
+.text-slide h1 {
+    /* color: #F3F3F1; */
+    color: #800000;
+}
+
+.text-slide p {
+    /* color: #F3F3F1; U Chicago grey accent 1  */
+    color: #4d4d4f;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.text-slide li {
+    /* color: #F3F3F1; */
+    color: #4d4d4f;
+    padding: .05em;
+    line-height: 1.5;
+}
+
+.text-slide li:nth-last-child() {
+    padding-bottom: 0;
+}
+
+.text-slide .remark-slide-number {
+    /* color: #F3F3F1; */
+    color: #4d4d4f;
+}
+
+.main-slide {
+    background-color: #800000;
+    color: #F3F3F1;
+}
+
+.main-slide  .remark-slide-number {
+    display: none;
+}
+
+.main-slide h1 {
+    color: #F3F3F1;
+}
+
+.main-slide p {
+    color: #F3F3F1;
+}
+
+.remark-slide table {
+    background-color: #F3F3F1;
+    padding: .1em;
+    margin: auto;
+    border-top: none;
+    border-bottom: none;
+}
+
+th {
+    background-color: #F3F3F1;
+    padding: 7px;
+    color: #800000;
+}
+
+td { 
+    background-color: #F3F3F1;
+    padding: 7px;
+    color: #4d4d4f;
+}
+
+.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { 
+    background: none; 
+}
+
+.remark-slide tr:nth-child(even) { 
+    background: none; 
+}
+
+.last-slide h1 {
+    color: #4d4d4f;
+}
+
+.last-slide {
+    /* background-color: #F3F3F1; */
+    text-align: left;
+}
+
+.last-slide img {
+    height: 75%;
+    width: 75%;
+}
+
+.table-info > table:nth-child(3) {
+    margin-top: .55em;
+}
