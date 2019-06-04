@@ -83,7 +83,7 @@ The purpose of this project is to develop a deep learning based music generator 
 
 class: text-slide, center, middle
 
-# Two key components
+# Two key parts
 
 .pull-left[
 
@@ -98,6 +98,47 @@ class: text-slide, center, middle
 &lt;img src="http://clipart-library.com/data_images/182197.jpg" width="400px" height="250px"/&gt;
 
 ]
+
+---
+
+class: text-slide
+
+# Data and model description
+
+--
+
+
+* 130,000 midi files curated by a Reddit user, with a size of 3.65GB uncompressed. The collection has a great amount of variety representing all major genres in classical, jazz, metal, pop, etc.
+
+
+--
+
+
+* The generative algorithm will be of recurrent nature, where a snippet of monophonic midi track consisting of n number of quarter or 1/16th notes will be fed at a time into a neural network of input matrix dimension 129 by n.
+
+
+* This neural network will then output a matrix 129 by 1, which will be compared to the immediate next quarter or 1/16th note of the input for back propagation.  Thus, the model would take n quarter or 1/16th notes as input to predict the immediate next note.
+
+
+--
+
+
+* The adversarial algorithm is a simple discriminator to find whether a given input is from one of the original training samples or not.
+
+
+???
+
+Second bullet: The length is yet to be determined and will be determined through experimentation
+
+Last bullet: The length of the generated music is yet to be determined, but in theory we should be able to generate music of unlimited length given the recurrent structure.
+
+---
+
+class: text-slide
+
+# Visualizing music structure
+
+.center[&lt;img src="http://cms.brangerbriz.com/img/assetsFile/images/d7137f62cbeafcdc550298d39ed6c585" height="500px"&gt;]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
