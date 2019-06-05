@@ -177,7 +177,9 @@ class: text-slide
 
 # Visualizing music structure
 
-.center[<img src="img/rnn_uchicago_colors.gif" height="500px">]
+.center[<img src="img/rnn_uchicago_colors.gif" height="450px">]
+
+.footnote[Source: https://brangerbriz.com/blog/using-machine-learning-to-create-new-melodies]
 
 
 
