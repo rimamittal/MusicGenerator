@@ -114,10 +114,10 @@ class: text-slide
 --
 
 
-* The generative algorithm will be of recurrent nature, where a snippet of monophonic midi track consisting of n number of quarter or 1/16th notes will be fed at a time into a neural network of input matrix dimension 129 by n.
+* The generative algorithm will be of recurrent nature, where a snippet of monophonic midi track consisting of n number of quarter or `\(\frac{1}{16^\text{th}}\)` notes will be fed at a time into a neural network of input matrix dimension `\(129 \times n\)`.
 
 
-* This neural network will then output a matrix 129 by 1, which will be compared to the immediate next quarter or 1/16th note of the input for back propagation.  Thus, the model would take n quarter or 1/16th notes as input to predict the immediate next note.
+* This neural network will then output a matrix `\(129 \times 1\)`, which will be compared to the immediate next quarter or `\(\frac{1}{16^\text{th}}\)` note of the input for back propagation. Thus, the model would take n quarter or `\(\frac{1}{16^\text{th}}\)` notes as input to predict the immediate next note.
 
 
 --
@@ -128,6 +128,8 @@ class: text-slide
 
 ???
 
+First bullet point: The music data we have is a collection of 130,000 music files. The Genres include: Pop, Classical (Piano/Violin/Guitar), EDM, VideoGame, Movie/TV Theme.
+
 Second bullet: The length is yet to be determined and will be determined through experimentation
 
 Last bullet: The length of the generated music is yet to be determined, but in theory we should be able to generate music of unlimited length given the recurrent structure.
@@ -136,11 +138,92 @@ Last bullet: The length of the generated music is yet to be determined, but in t
 
 class: text-slide
 
-# Visualizing music structure
+# Visualizing model structure
 
 .center[&lt;img src="img/rnn_uchicago_colors.gif" height="450px"&gt;]
 
 .footnote[Source: https://brangerbriz.com/blog/using-machine-learning-to-create-new-melodies]
+
+---
+
+class: text-slide
+
+# Definition of variables
+
+Python libraries like __Music21__, __Librosa__, __PrettyMIDI__ are the toolkits we are using to extract meaningful information from our MIDI files. 
+
+&lt;br&gt;
+
+The stream object extracted using __Music21__ can then be used to identify:
+
+* Instruments
+
+* Key Signatures
+
+* Overlaps
+
+* Time Signatures
+
+* Measures
+
+From the measure, we were then able to identify:
+
+* Notes
+
+* Chord
+
+???
+
+We are also working with other metrics like the Pitch Histogram and other Composition Parameters Analysis.
+
+---
+
+class: text-slide
+
+# To-date progress
+
+--
+
+
+* Gathered data and performed initial analysis
+
+
+--
+
+
+* Fit rudimentary model to a small sample
+
+
+--
+
+
+* Analyzed song structure with time series approaches
+
+
+--
+
+---
+
+class: text-slide
+
+# Technical challenges
+
+--
+
+
+* Novelty of the project results in less formulated resources to rely on
+
+
+--
+
+
+* Determining a flexible model architecture to allow user feedback
+
+
+--
+
+
+* Collecting more data for training
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
