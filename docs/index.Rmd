@@ -177,17 +177,7 @@ Last bullet: The length of the generated music is yet to be determined, but in t
 
 class: text-slide
 
-# Visualizing model structure
-
-.center[<img src="img/rnn_uchicago_colors.gif" height="450px">]
-
-.footnote[Source: https://brangerbriz.com/blog/using-machine-learning-to-create-new-melodies]
-
----
-
-class: text-slide
-
-# Definition of variables
+# Variables
 
 Python libraries like __Music21__, __Librosa__, __PrettyMIDI__ are the toolkits we are using to extract meaningful information from our MIDI files. 
 
@@ -219,6 +209,28 @@ We are also working with other metrics like the Pitch Histogram and other Compos
 
 class: text-slide
 
+# Data structure example
+
+```{r}
+df <- read_csv(paste0(here(), "/docs/sonic_df.csv")) %>% select(-1)
+
+DT::datatable(df, options = list(pageLength = 1, dom = "tip"))
+```
+
+---
+
+class: text-slide
+
+# Visualizing model structure
+
+.center[<img src="img/rnn_uchicago_colors.gif" height="450px">]
+
+.footnote[Source: https://brangerbriz.com/blog/using-machine-learning-to-create-new-melodies]
+
+---
+
+class: text-slide
+
 # To-date progress
 
 --
@@ -230,16 +242,32 @@ class: text-slide
 --
 
 
-* Fit rudimentary model to a small sample
+* Explored Google’s Magenta and explored Performance-RNN to generate some music
 
 
 --
 
 
-* Analyzed song structure with time series approaches
+* Analyzed song structure with time series approaches (ARIMA, VAR, Markov)
+
+
+---
+
+class: text-slide
+
+# Future work
+
+--
+
+
+* Build 2-3 variations of GANs and Variational Auto-encoders during the implementation quarter
 
 
 --
+
+
+* Work on specific Genre-based generation and also personalized music generation, sending out surveys and using preferences to adjust the model weights
+
 
 ---
 
@@ -263,8 +291,6 @@ class: text-slide
 
 
 * Collecting more data for training
-
-
 
 
 
