@@ -177,7 +177,7 @@ class: text-slide
 
 # Visualizing music structure
 
-.center[<img src="http://cms.brangerbriz.com/img/assetsFile/images/d7137f62cbeafcdc550298d39ed6c585" height="500px">]
+.center[<img src="img/rnn_uchicago_colors.gif" height="500px">]
 
 
 
