@@ -212,7 +212,7 @@ class: text-slide
 # Data structure example
 
 ```{r}
-df <- read_csv(paste0(here(), "/docs/sonic_df.csv")) %>% select(-1)
+df <- read_csv(paste0(here(), "/sonic_df.csv")) %>% select(-1)
 
 DT::datatable(df, options = list(pageLength = 1, dom = "tip"))
 ```
@@ -291,6 +291,35 @@ class: text-slide
 
 
 * Collecting more data for training
+
+---
+
+class: text-slide
+
+# Project Timeline
+
+--
+
+
+* Capstone Implementation in Autumn 2019
+
+
+--
+
+
+* Capstone Writing in Winter 2020
+
+
+--
+
+
+* Utilize the Summer Quarter(Vacation/Internship) for exploring 2-3 variations of GANs and Variational Auto-Encoders.
+
+--
+
+
+* Work on specific Genre based generation and personalized Music Generation in the Autumn Quarter.
+
 
 
 
